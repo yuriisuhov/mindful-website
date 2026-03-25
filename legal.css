@@ -15,6 +15,11 @@
     position: relative;
 }
 
+.legal-back-row {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
 .legal-logo {
     font-size: clamp(2.5rem, 6vw, 3.5rem);
     font-weight: 600;
@@ -45,8 +50,8 @@
 }
 
 .legal-back svg {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
 }
 
 .legal-container h1 {
