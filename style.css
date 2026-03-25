@@ -236,8 +236,6 @@ body {
     width: 100%;
     height: auto;
     filter: drop-shadow(0 20px 60px rgba(128, 107, 224, 0.15));
-    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
 }
 
 /* Privacy Section */
