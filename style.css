@@ -235,7 +235,6 @@ body {
     max-width: 240px;
     width: 100%;
     height: auto;
-    filter: drop-shadow(0 20px 60px rgba(128, 107, 224, 0.15));
 }
 
 /* Privacy Section */
