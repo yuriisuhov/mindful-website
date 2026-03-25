@@ -10,39 +10,43 @@
 }
 
 .legal-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
 }
 
 .legal-logo {
-    font-size: 1.25rem;
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
     font-weight: 600;
     color: #fff;
     text-decoration: none;
+    letter-spacing: -0.02em;
+    display: block;
+    margin-bottom: 24px;
 }
 
 .legal-back {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
     color: #fff;
     text-decoration: none;
-    transition: background 0.2s ease;
+    transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .legal-back:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.25);
 }
 
 .legal-back svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
 }
 
 .legal-container h1 {
