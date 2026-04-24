@@ -1,3 +1,10 @@
+// Trigger hero animations after first paint so LCP is visible to crawlers
+requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+        document.documentElement.classList.add('animated');
+    });
+});
+
 // Scroll-triggered fade-in animations
 document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('.feature-card, .showcase-text, .showcase-mockup, .privacy-container');

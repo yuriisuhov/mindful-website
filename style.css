@@ -54,9 +54,6 @@ body {
     color: #fff;
     letter-spacing: -0.04em;
     margin-bottom: 16px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 0.8s ease forwards;
 }
 
 .hero-subtitle {
@@ -64,17 +61,30 @@ body {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 300;
     margin-bottom: 40px;
+}
+
+.download-btn {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+/* Animations — only applied after first paint via JS */
+.animated .hero-title {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.animated .hero-subtitle {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeUp 0.8s ease 0.2s forwards;
 }
 
-.download-btn {
-    display: inline-block;
+.animated .download-btn {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeUp 0.8s ease 0.4s forwards;
-    transition: transform 0.2s ease;
 }
 
 .download-btn:hover {
@@ -88,6 +98,9 @@ body {
 .hero-mockup {
     position: relative;
     z-index: 1;
+}
+
+.animated .hero-mockup {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeUp 1s ease 0.5s forwards;
