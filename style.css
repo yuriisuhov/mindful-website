@@ -66,6 +66,7 @@ body {
 .download-btn {
     display: inline-block;
     transition: transform 0.2s ease;
+    will-change: transform;
 }
 
 /* Animations — only applied after first paint via JS */
